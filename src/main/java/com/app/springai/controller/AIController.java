@@ -6,6 +6,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequestMapping("/chat")
@@ -22,6 +23,11 @@ public class AIController {
 //        this.chatClient = builder.build();
 //    }
 
+    @GetMapping("/rag")
+    public ResponseEntity<Flux<String>> ragChat(@RequestParam (value = "userInput", required = true) String userInput) {
+        Flux<String> response = aiService.getResponse(userInput);
+        return ResponseEntity.ok(response);
+    }
 
     @GetMapping()
     public ResponseEntity<String> chatWithAI(@RequestParam (value = "userInput", required = true) String userInput) {
