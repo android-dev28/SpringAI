@@ -1,0 +1,299 @@
+{
+  "document": {
+    "title": "Company Policy Manual",
+    "company": "ABC Life Sciences Pvt. Ltd.",
+    "document_id": "HR-POL-001",
+    "version": "2.0",
+    "effective_date": "2026-10-01",
+    "policy_owner": "Human Resources & Corporate Compliance",
+    "review_cycle": "Annual or when material regulatory/business changes occur",
+    "notice": "This is a fictional company policy document created for technical practice with document ingestion, RAG, vector databases, and semantic search."
+  },
+  "policies": [
+    {
+      "section": "1",
+      "title": "Code of Conduct",
+      "topics": [
+        {
+          "title": "Professional behavior",
+          "content": "Employees must conduct themselves professionally and respectfully. Harassment, bullying, intimidation, discrimination, retaliation, threats, violence, deliberate falsification of records, and dishonest business practices are prohibited."
+        },
+        {
+          "title": "Conflict of interest",
+          "content": "Employees must disclose any actual, potential, or perceived conflict of interest that could influence a business decision. Examples include participating in a hiring decision involving a close relative, accepting a financial benefit from a supplier, or using confidential company information to support a personal business interest."
+        },
+        {
+          "title": "Gifts and hospitality",
+          "content": "Employees may accept or offer modest business courtesies only when they are lawful, reasonable, infrequent, transparent, and not intended to influence a business decision. Cash, cash equivalents, personal loans, or benefits that create an obligation must not be accepted."
+        },
+        {
+          "title": "Anti-bribery",
+          "content": "The company prohibits bribery, kickbacks, facilitation payments, and improper advantages. Employees must not make payments to public officials or commercial representatives to obtain an unfair business benefit."
+        },
+        {
+          "title": "Use of company resources",
+          "content": "Company property, systems, accounts, software, vehicles, equipment, and funds must be used primarily for legitimate business purposes."
+        }
+      ],
+      "employee_responsibilities": [
+        "Read and follow policies applicable to your role.",
+        "Protect company property and information.",
+        "Declare conflicts of interest promptly.",
+        "Cooperate with investigations and audits.",
+        "Report suspected misconduct without attempting to conceal evidence."
+      ]
+    },
+    {
+      "section": "2",
+      "title": "Attendance, Working Hours and Leave",
+      "topics": [
+        {
+          "title": "Working hours",
+          "content": "Standard working hours are determined by the employee's function, location, and employment terms. Employees must follow the attendance system designated by the company."
+        },
+        {
+          "title": "Attendance recording",
+          "content": "Employees must record attendance accurately. Proxy attendance, falsifying timesheets, sharing attendance credentials, or asking another person to record attendance on one's behalf is prohibited."
+        },
+        {
+          "title": "Leave application",
+          "content": "Planned leave should normally be requested through the HR or attendance system before the leave begins. Emergency or unplanned absence should be communicated to the reporting manager as soon as reasonably possible."
+        },
+        {
+          "title": "Remote and hybrid work",
+          "content": "Where remote or hybrid work is approved, employees remain responsible for working hours, availability, confidentiality, information security, and deliverables."
+        },
+        {
+          "title": "Overtime and additional work",
+          "content": "Overtime, weekend work, or work on designated holidays must follow the approval process applicable to the employee's location and role."
+        }
+      ],
+      "manager_responsibilities": [
+        "Set clear expectations for working hours and availability.",
+        "Approve or reject leave requests consistently and document exceptions.",
+        "Monitor workload and escalate recurring capacity issues.",
+        "Ensure attendance records are accurate and corrected through approved processes."
+      ]
+    },
+    {
+      "section": "3",
+      "title": "Information Security and Data Protection",
+      "topics": [
+        {
+          "title": "Password and authentication",
+          "content": "Employees must use unique passwords for company accounts and must not share passwords or authentication codes. Multi-factor authentication must be enabled where required."
+        },
+        {
+          "title": "Confidential information",
+          "content": "Confidential information includes customer information, employee records, candidate data, pricing, contracts, business plans, source code, credentials, technical specifications, quality records, and non-public financial information."
+        },
+        {
+          "title": "Data classification",
+          "content": "Information should be treated according to its sensitivity. Public information may be shared externally when authorized. Internal information is intended for employees and approved partners. Confidential information requires controlled access. Highly restricted information requires explicit authorization and enhanced safeguards."
+        },
+        {
+          "title": "Phishing and suspicious activity",
+          "content": "Employees must verify unexpected requests for passwords, payment changes, confidential files, or urgent transfers of information. Suspicious emails, links, attachments, login prompts, or unusual system behavior must be reported to Information Security promptly."
+        },
+        {
+          "title": "Lost or stolen devices",
+          "content": "Loss or theft of a company device, access card, storage media, or mobile device containing company information must be reported immediately."
+        },
+        {
+          "title": "AI and external tools",
+          "content": "Employees must not enter confidential, personal, customer, regulated, or proprietary information into public AI tools or external software unless the tool and use case have been approved by the company."
+        }
+      ],
+      "security_rule": "If you would not send the information to an unknown external recipient, do not paste it into an unapproved external service."
+    },
+    {
+      "section": "4",
+      "title": "Workplace Safety, Quality and Compliance",
+      "topics": [
+        {
+          "title": "Safety responsibilities",
+          "content": "Employees must follow site-specific safety procedures, use required personal protective equipment, maintain clear emergency routes, and report unsafe conditions."
+        },
+        {
+          "title": "Incident and near-miss reporting",
+          "content": "Workplace injuries, environmental incidents, equipment damage, unsafe conditions, and near misses must be reported through the designated reporting process."
+        },
+        {
+          "title": "Quality records",
+          "content": "Quality-related records must be accurate, complete, legible, attributable, and created at the time the activity is performed. Employees must not backdate records, destroy original evidence, or make undocumented changes to controlled records."
+        },
+        {
+          "title": "Deviations and corrective actions",
+          "content": "A deviation is a departure from an approved procedure, specification, instruction, or expected condition. Employees must document deviations promptly and provide factual information for investigation."
+        },
+        {
+          "title": "Training",
+          "content": "Employees must complete mandatory induction, compliance, safety, information security, and role-specific training within the assigned timelines."
+        },
+        {
+          "title": "Audit cooperation",
+          "content": "Employees must provide accurate information during internal or external audits and must not conceal records or coach another person to provide misleading information."
+        }
+      ],
+      "escalation_principle": "When an employee identifies a potential safety, quality, regulatory, or data-integrity risk, the expected action is to stop or contain the affected activity where appropriate and escalate the issue through the defined process."
+    },
+    {
+      "section": "5",
+      "title": "Procurement, Expenses and Company Assets",
+      "topics": [
+        {
+          "title": "Procurement",
+          "content": "Purchases must follow the approved procurement process. Employees must not split a purchase into smaller transactions to avoid approval thresholds."
+        },
+        {
+          "title": "Supplier due diligence",
+          "content": "New suppliers may be subject to identity verification, tax documentation, banking verification, quality assessment, compliance screening, and other due-diligence checks."
+        },
+        {
+          "title": "Business expenses",
+          "content": "Business expenses must be reasonable, necessary, supported by valid documentation, and submitted within the applicable claim period."
+        },
+        {
+          "title": "Corporate cards",
+          "content": "Corporate cards are issued for authorized business expenditure only. Cardholders are responsible for safeguarding the card, reviewing transactions, submitting supporting documents, and reporting unauthorized transactions immediately."
+        },
+        {
+          "title": "Company assets",
+          "content": "Laptops, mobile devices, equipment, furniture, access cards, software licenses, and other company assets must be protected from loss, misuse, unauthorized transfer, or damage."
+        }
+      ],
+      "approval_matrix": [
+        {
+          "activity": "Routine office purchase",
+          "typical_approval_owner": "Department Manager",
+          "required_evidence": "Purchase request / invoice"
+        },
+        {
+          "activity": "High-value purchase",
+          "typical_approval_owner": "Department + Finance",
+          "required_evidence": "Quotation + approval"
+        },
+        {
+          "activity": "New supplier",
+          "typical_approval_owner": "Procurement + Compliance",
+          "required_evidence": "Due-diligence documents"
+        },
+        {
+          "activity": "Travel expense",
+          "typical_approval_owner": "Reporting Manager",
+          "required_evidence": "Expense claim + receipts"
+        },
+        {
+          "activity": "Asset disposal",
+          "typical_approval_owner": "IT/Facilities + Finance",
+          "required_evidence": "Asset record + disposal approval"
+        }
+      ]
+    },
+    {
+      "section": "6",
+      "title": "Travel, Communication and Social Media",
+      "topics": [
+        {
+          "title": "Business travel",
+          "content": "Business travel must be approved before booking unless an emergency exception applies. Employees should use approved travel channels and select reasonable options considering cost, safety, schedule, and business requirements."
+        },
+        {
+          "title": "Travel expenses",
+          "content": "Eligible travel expenses may include transportation, accommodation, meals, local travel, and other approved business costs. Personal upgrades and expenses for accompanying family members are not reimbursable unless specifically approved."
+        },
+        {
+          "title": "External communication",
+          "content": "Only authorized spokespersons may make official statements on behalf of the company."
+        },
+        {
+          "title": "Social media",
+          "content": "Employees may use personal social-media accounts, but they must not disclose confidential information, publish customer or employee data without authorization, misrepresent personal opinions as official company statements, or misuse company trademarks."
+        },
+        {
+          "title": "Recruitment and candidate information",
+          "content": "Candidate resumes, contact details, interview feedback, compensation information, and assessment records must be handled confidentially and only for legitimate recruitment purposes."
+        },
+        {
+          "title": "Customer and partner communications",
+          "content": "Employees must provide accurate information to customers and partners. Commitments involving pricing, delivery timelines, contractual terms, regulatory claims, or technical specifications should be made only within the employee's authority."
+        }
+      ],
+      "communication_checklist": [
+        "Is the information accurate and approved?",
+        "Does the recipient have a legitimate need to receive it?",
+        "Does the communication contain confidential or personal information?",
+        "Am I authorized to make this commitment or statement?",
+        "Would the communication create a legal, regulatory, security, or reputational risk?"
+      ]
+    },
+    {
+      "section": "7",
+      "title": "Grievance Handling, Reporting and Policy Administration",
+      "topics": [
+        {
+          "title": "Raising a concern",
+          "content": "Employees are encouraged to raise concerns promptly when they observe misconduct, safety risks, discrimination, harassment, fraud, conflicts of interest, data-security incidents, quality concerns, or other policy violations."
+        },
+        {
+          "title": "Non-retaliation",
+          "content": "The company prohibits retaliation against a person who raises a concern in good faith or participates honestly in an investigation."
+        },
+        {
+          "title": "Investigation process",
+          "content": "Reported concerns may be reviewed to determine whether an investigation is required. Investigations may involve interviews, document review, system records, and other appropriate evidence."
+        },
+        {
+          "title": "Corrective action",
+          "content": "Where a policy violation is substantiated, the company may take corrective action consistent with the seriousness of the matter, applicable law, employment terms, and internal procedures."
+        },
+        {
+          "title": "Policy exceptions",
+          "content": "Exceptions to this manual require documented approval from the policy owner or the authority specified in the relevant procedure."
+        },
+        {
+          "title": "Policy review and ownership",
+          "content": "Human Resources and Corporate Compliance are responsible for coordinating periodic review of this manual."
+        }
+      ],
+      "contact_matrix": [
+        {
+          "issue": "Employment, leave, workplace conduct",
+          "primary_contact": "Human Resources"
+        },
+        {
+          "issue": "Quality or compliance concern",
+          "primary_contact": "Quality / Compliance"
+        },
+        {
+          "issue": "Cybersecurity, phishing, access issue",
+          "primary_contact": "Information Security / IT"
+        },
+        {
+          "issue": "Safety incident or near miss",
+          "primary_contact": "EHS / Site Safety"
+        },
+        {
+          "issue": "Procurement or supplier issue",
+          "primary_contact": "Procurement / Finance"
+        },
+        {
+          "issue": "Confidential misconduct concern",
+          "primary_contact": "Compliance / Ethics Channel"
+        }
+      ]
+    }
+  ],
+  "rag_test_questions": [
+    "What is the policy for using public AI tools?",
+    "What should an employee do after losing a company laptop?",
+    "Who approves high-value purchases?",
+    "What is the company's non-retaliation policy?",
+    "How should candidate information be handled?",
+    "What happens when a deviation occurs?",
+    "What information is considered confidential?",
+    "What are the rules for corporate cards?",
+    "Who handles cybersecurity incidents?",
+    "What is the process for reporting a near miss?"
+  ]
+}
