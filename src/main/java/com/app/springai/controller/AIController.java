@@ -26,7 +26,6 @@ public class AIController {
     @GetMapping
     public ResponseEntity<String> chatWithAI(@RequestParam (value = "userInput", required = true) String userInput) {
         var result = chatClient.prompt(userInput).call().content();
-//        String response = aiService.chatWithAI(userInput);
         return ResponseEntity.ok(result);
     }
 
