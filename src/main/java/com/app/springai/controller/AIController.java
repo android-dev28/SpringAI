@@ -4,6 +4,7 @@ import com.app.springai.service.AIService;
 import com.app.springai.utility.Helper;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -17,28 +18,21 @@ public class AIController {
     @Autowired
     AIService service;
 
-//    private ChatClient chatClient;
-//
-//    AIController(ChatClient.Builder builder) {
-//        this.chatClient = builder.build();
+    @Value("${app.weather.api.key}")
+    private String weatherAPIKey;
+    // Tool Calling
+//    @GetMapping("/tool")
+//    public ResponseEntity<String> chatWithTool(@RequestParam (value = "userInput", required = true) String userInput) {
+//        String response = aiService.chatWithTool(userInput);
+//        return ResponseEntity.ok(response);
 //    }
 
-    @GetMapping("/rag")
-    public ResponseEntity<Flux<String>> ragChat(@RequestParam (value = "userInput", required = true) String userInput) {
-        Flux<String> response = aiService.getResponse(userInput);
+    @GetMapping("/tool")
+    public ResponseEntity<String> chatWithTool(@RequestParam (value = "city", required = true) String city) {
+        String response = aiService.chatWithTool(city);
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping()
-    public ResponseEntity<String> chatWithAI(@RequestParam (value = "userInput", required = true) String userInput) {
-//        var result = chatClient.prompt(userInput).call().content();
-        String response = aiService.chatWithAI(userInput);
-        return ResponseEntity.ok(response);
-    }
-    @PostMapping  public ResponseEntity<String> saveData() {
-        System.out.println("Saving data to vector database...");
-        service.saveDate(Helper.getData());
-        return ResponseEntity.ok("Data saved to vector database successfully.");
-    }
+
 
 }
